@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+:root {
+  --dark: rgba(0,0,0,.7);
+  --light: rgba(0,0,0,.2);
+}
+
+* {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+body {
+  display: grid;
+  color: var(--dark);
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.67;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 800px;
+  min-width: 350px;
+  width: 90vw;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 2.3em;
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 1.4em;
+}
+
+#postModMessage {
+  font-weight: bold;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid var(--light);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: var(--dark);
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 1em;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  color: var(--light);
+  background-color: var(--light);
+}
+
+a:link, a:visited {
+  color: #ff5252;
+}
+
+#startobj, #endobj {
+  width: 100%;
+}

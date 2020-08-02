@@ -1,0 +1,23 @@
+{
+  "name": "YouTube Interval Timer",
+  "short_name": "YT Interval Timer",
+  "description": "Takes start and stop points of a YouTube video, down to the frame, and gives the time between them in the format 1h 23m 45s 678ms.",
+  "theme_color": "#4d4d4d",
+  "background_color": "#4d4d4d",
+  "display": "standalone",
+  "start_url": "index.html",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}
