@@ -45,11 +45,11 @@
       </section>
 
       <section>
-        <form onsubmit="compute()" method="post">
+        <form onsubmit="compute(); return false">
           <h2 id="video-endpoints">Video Endpoints</h2>
           <p>
             Find the starting point (you can use the <kbd>,</kbd> and <kbd>.</kbd> keys to find the exact frame). Right
-            click the video and select “Copy debug info” and paste it for starting frame. Repeat for ending frame.
+            click the video and select "Copy debug info" and paste it for starting frame. Repeat for ending frame.
           </p>
           <p>
             <label for="startobj">

@@ -22,13 +22,13 @@ body {
 
 main {
   max-width: 800px;
-  min-width: 350px;
+  min-width: 200px;
   width: 90vw;
   justify-self: center;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 1em;
 }
 
