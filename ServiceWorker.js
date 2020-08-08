@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('ffxtracker-static').then(function(cache) {
+    caches.open('yt-interval-timer').then(function(cache) {
       return cache.addAll([
         './index.html',
         './icon.png',
