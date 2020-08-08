@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="version" content="1.1.1" />
+    <meta name="version" content="1.2.1" />
     <meta name="Description" content="Takes start and stop points of a YouTube video, down to the frame, and gives the time between them in the format 1h 23m 45s 678ms.">
+    <meta name="theme-color" content="#ff5252"/>
     <title>YouTube Frame Timer</title>
-    <meta name="theme-color" content="#4d4d4d"/>
-    <link rel="stylesheet" href="style.css" />
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="shortcut icon" href="icon.png">
     <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript">
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('ServiceWorker.js', {scope: '.'})
@@ -29,13 +29,15 @@
         <h1 id="youtube-interval-timer">YouTube Interval Timer</h1>
         <hr>
         <br>
-        <p>Takes start and stop points of a YouTube video, down to the frame, and gives the time between them in the format <code>1h 23m 45s 678ms</code>. Source code is <a href="https://github.com/slashinfty/yt-frame-timer">available</a>.</p>
+        <p>Takes start and stop points of a YouTube video, down to the frame, and gives the time between them in the format
+          <code>1h 23m 45s 678ms</code>. The source code is available <a href="https://github.com/slashinfty/yt-frame-timer">here</a>.
+        </p>
       </header>
 
       <section>
         <h2 id="video-framerate">Video Framerate</h2>
-        <p>Right click the YouTube video and select "Stats for nerds." The third line is "Current / Optimal Res" - find the
-          two numbers after the @ and enter them for framerate.
+        <p>Right click the YouTube video and select "Stats for nerds". In the third line "Current / Optimal Res", find the
+          two numbers after the @ and enter them as framerate.
         </p>
         <p>
           <label for="framerate">
@@ -49,7 +51,7 @@
           <h2 id="video-endpoints">Video Endpoints</h2>
           <p>
             Find the starting point (you can use the <kbd>,</kbd> and <kbd>.</kbd> keys to find the exact frame). Right
-            click the video and select "Copy debug info" and paste it for starting frame. Repeat for ending frame.
+            click the video, select "Copy debug info" and paste it into "Starting frame". Repeat for ending frame.
           </p>
           <p>
             <label for="startobj">
@@ -61,19 +63,14 @@
               Ending frame: <input type="text" id="endobj" onchange='parseForTime(event)' required/>
             </label>
           </p>
+
           <h2 id="video-time">Video Time</h2>
-          <p>
-            <button id="computeButton" type="submit">Compute time</button>
-            <input type="text" id="time" readonly size="20" />
-          </p>
+          <button id="computeButton" type="submit">Compute time</button>
+          <input type="text" id="time" readonly size="15" />
+          <textarea id="modMessage" cols="40" rows="5" disabled></textarea>
+          <button id="modMessageButton" onclick="copyModMessage()" disabled>Copy Mod Message to Clipboard</button>
         </form>
       </section>
-
-      <section>
-        <p id="modMessage"></p>
-        <p id="postModMessage"></p>
-      </section>
-
     </main>
     <script src="main.js"></script>
   </body>

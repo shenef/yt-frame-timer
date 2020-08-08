@@ -13,16 +13,16 @@
 body {
   display: grid;
   color: var(--dark);
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
-  line-height: 1.67;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 1em;
 }
 
 main {
   max-width: 800px;
-  min-width: 200px;
   width: 90vw;
   justify-self: center;
 }
@@ -47,6 +47,12 @@ p {
   font-weight: bold;
 }
 
+#modMessage {
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  resize: none;
+  display: block;
+}
 kbd {
     background-color: #eee;
     border-radius: 3px;
@@ -79,5 +85,5 @@ a:link, a:visited {
 }
 
 #startobj, #endobj {
-  width: 100%;
+  width: 98%;
 }
